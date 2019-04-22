@@ -12,7 +12,7 @@ class Routes extends Component {
   public render() {
     return (
       <Router>
-        <Scene key={"root"} hideNavBar initial gesturesEnabled={false}>
+        <Scene key={"root"} hideNavBar initial>
           <Scene
             key={getTheComponentName({ LoadingPage })}
             component={LoadingPage}
