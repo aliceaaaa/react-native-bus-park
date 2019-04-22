@@ -1,0 +1,3 @@
+rootProject.name = 'buspark'
+
+include ':app'
