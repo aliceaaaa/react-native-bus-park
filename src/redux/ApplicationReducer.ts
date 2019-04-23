@@ -5,6 +5,7 @@ import { DriverReducer } from "./driver/DriverReducer";
 import { BusReducer } from "./bus/BusReducer";
 import { DriverListReducer } from "./DriverList/DriverListReducer";
 import { BusListReducer } from "./BusList/BusListReducer";
+import { DistanceReducer } from "./distance/DistanceReducer";
 
 export const ApplicationReducer = (
   state = InitialApplicationState,
@@ -14,6 +15,7 @@ export const ApplicationReducer = (
     driver: DriverReducer,
     bus: BusReducer,
     busList: BusListReducer,
-    driverList: DriverListReducer
+    driverList: DriverListReducer,
+    distance: DistanceReducer
   })(state, action);
 };

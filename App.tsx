@@ -6,6 +6,7 @@ import SplashScreen from "react-native-splash-screen";
 import { IApplicationState } from "./src/redux/IApplicationState";
 import { MainPage } from "./src/pages/MainPage";
 import { Provider } from "react-redux";
+import { rootSaga } from "./src/redux/rootSaga";
 
 export interface IAppComponentState {
   store: Store<IApplicationState>;
@@ -19,7 +20,7 @@ export class App extends Component<{}, IAppComponentState> {
 
     const store = createStore(ApplicationReducer, applyMiddleware(sagas));
 
-    sagas.run(rootSaga, store.dispatch);
+    sagas.run(rootSaga);
 
     this.state = {
       store

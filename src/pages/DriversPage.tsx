@@ -16,7 +16,7 @@ class DriversPageComponent extends Component<IDriveresPagePropsFromState> {
   }
 }
 
-export const mapStateToProps = (
+const mapStateToProps = (
   state: IApplicationState
 ): IDriveresPagePropsFromState => ({
   drivers: state.driverList.drivers

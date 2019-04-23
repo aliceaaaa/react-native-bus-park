@@ -21,7 +21,7 @@ class BusesPageComponent extends Component<IBusesPagePropsFromState> {
   }
 }
 
-export const mapStateToProps = (
+const mapStateToProps = (
   state: IApplicationState
 ): IBusesPagePropsFromState => ({
   buses: state.busList.buses
